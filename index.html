@@ -1,319 +1,1 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice ETA Download Tools - تنزيل فواتير الضرائب المصرية</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
-        
-        :root {
-            --primary-color: #0d6efd;
-            --secondary-color: #198754;
-            --dark-color: #212529;
-            --light-color: #f8f9fa;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .logo {
-            margin-bottom: 1rem;
-        }
-        
-        .logo img {
-            max-width: 80px;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 1.5rem;
-        }
-        
-        .download-btn {
-            display: inline-block;
-            background-color: white;
-            color: var(--primary-color);
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 2px solid white;
-            font-size: 1.1rem;
-        }
-        
-        .download-btn:hover {
-            background-color: transparent;
-            color: white;
-        }
-        
-        section {
-            padding: 3rem 0;
-            background-color: white;
-            margin: 2rem 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-        }
-        
-        h2 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-            text-align: center;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .feature-card {
-            background-color: var(--light-color);
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .feature-card h3 {
-            margin-bottom: 1rem;
-            color: var(--dark-color);
-        }
-        
-        .screenshots {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .screenshot {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        
-        .screenshot img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .privacy-policy {
-            background-color: var(--light-color);
-        }
-        
-        .privacy-policy p {
-            margin-bottom: 1rem;
-        }
-        
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .subtitle {
-                font-size: 1rem;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="https://icon-library.com/images/download-excel-icon/download-excel-icon-21.jpg" alt="شعار Invoice ETA Download Tools - أيقونة برنامج تنزيل الفواتير">
-            </div>
-            <h1>Invoice ETA Download Tools</h1>
-            <p class="subtitle">حفظ جميع الفواتير من بوابة الضرائب الإلكترونية كملفات PDF و Excel بنقرة واحدة</p>
-            <a href="#download" class="download-btn">تنزيل الإضافة الآن</a>
-        </div>
-    </header>
-    
-    <section class="container" id="features">
-        <h2>المميزات الرئيسية</h2>
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>تنزيل فوري</h3>
-                <p>احصل على جميع فواتيرك دفعة واحدة بدون انتظار أو مجهود</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h3>أتمتة كاملة</h3>
-                <p>معالجة الفواتير بشكل تلقائي بدون أي تدخل يدوي منك</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔐</div>
-                <h3>حماية البيانات</h3>
-                <p>لا يتم تخزين أو مشاركة أي بياناتك الشخصية مع أي طرف ثالث</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📄</div>
-                <h3>تنسيقات متعددة</h3>
-                <p>اختر بين PDF أو Excel أو كليهما حسب احتياجاتك</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🚀</div>
-                <h3>سرعة عالية</h3>
-                <p>معالجة الفواتير في أسرع وقت ممكن حتى مع الأعداد الكبيرة</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔄</div>
-                <h3>تحديثات دورية</h3>
-                <p>إصلاح وتحسينات مستمرة لضمان أفضل تجربة استخدام</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="container" id="how-it-works">
-        <h2>كيف تعمل الإضافة</h2>
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">1</div>
-                <h3>قم بالتثبيت</h3>
-                <p>نزّل الإضافة من المتجر الرسمي لمتصفحك وقم بتثبيتها</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">2</div>
-                <h3>تسجيل الدخول</h3>
-                <p>ادخل إلى حسابك على بوابة ETA باستخدام بيانات الاعتماد الخاصة بك</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">3</div>
-                <h3>تنزيل الفواتير</h3>
-                <p>اضغط على زر التنزيل واختر الصيغ المطلوبة وسيتم حفظها على جهازك</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="container" id="screenshots">
-        <h2>لقطات من الإضافة</h2>
-        <div class="screenshots">
-            <div class="screenshot">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ead4985d-da1d-44d4-93ad-88deb43cb1fe.png" alt="لقطة شاشة لواجهة الإضافة في متصفح كروم - تظهر زر تنزيل الفواتير رئيسي في الصفحة">
-            </div>
-            <div class="screenshot">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/991a8081-8565-4017-9310-58521946f464.png" alt="لقطة شاشة لخيارات الإضافة مع تحديد صيغتي PDF و Excel للتنزيل">
-            </div>
-            <div class="screenshot">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd6f66e4-73d2-410b-bec7-5aa30664b2fe.png" alt="لقطة شاشة بعد التنزيل الناجح تظهر قائمة بالفواتير المحملة على الجهاز">
-            </div>
-        </div>
-    </section>
-    
-    <section class="container privacy-policy" id="privacy">
-        <h2>سياسة الخصوصية</h2>
-        <p>نحن نقدّر خصوصيتك ونلتزم بحماية معلوماتك الشخصية. إليك تفاصيل سياسة الخصوصية الخاصة بنا:</p>
-        
-        <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--dark-color);">ما المعلومات التي نجمعها؟</h3>
-        <p>لا نقوم بجمع أو تخزين أي بيانات شخصية أو معلومات حساسة على خوادمنا. جميع عمليات التنزيل تتم مباشرة من بوابة الضرائب الإلكترونية إلى جهازك بدون أي وسيط.</p>
-        
-        <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--dark-color);">كيف نستخدم المعلومات؟</h3>
-        <p>الإضافة تعمل كأداة مساعدة ولا تشارك أي بيانات مع طرف ثالث. عمليات التنزيل تتم محلياً فقط على جهاز المستخدم.</p>
-        
-        <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--dark-color);">أمان المعلومات</h3>
-        <p>تم تطوير الإضافة بأعلى معايير الأمان لضمان سلامة بياناتك. لا يوجد خادم مركزي لتخزين البيانات مما يقلل من مخاطر الاختراق.</p>
-        
-        <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--dark-color);">التحديثات على السياسة</h3>
-        <p>قد نقوم بتحديث سياسة الخصوصية هذه من حين لآخر. ننصح بمراجعة هذه الصفحة دورياً لأي تغييرات.</p>
-        
-        <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--dark-color);">اتصل بنا</h3>
-        <p>إذا كان لديك أي استفسارات حول سياسة الخصوصية، لا تتردد في التواصل معنا على privacy@etadownloadtools.com</p>
-    </section>
-    
-    <section class="container" id="download">
-        <h2>قم بتنزيل الإضافة الآن</h2>
-        <p style="text-align: center; margin-bottom: 2rem;">توافق مع متصفحات Chrome و Firefox و Edge. حجم صغير وسهل التثبيت.</p>
-        <div style="text-align: center;">
-            <a href="#" class="download-btn">تنزيل لـ Chrome</a>
-            <a href="#" class="download-btn" style="margin-right: 1rem;">تنزيل لـ Firefox</a>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>Invoice ETA Download Tools - جميع الحقوق محفوظة © 2023</p>
-            <p style="margin-top: 1rem;">أداة مستقلة غير تابعة لهيئة الضرائب المصرية أو أي جهة حكومية</p>
-        </div>
-    </footer>
-    
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Download buttons functionality (simulated)
-        document.querySelectorAll('.download-btn').forEach(btn => {
-            if(btn.getAttribute('href') === '#') {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    alert('سيتم توجيهك لصفحة التنزيل الرسمية للإضافة. هذه محاكاة للواجهة فقط.');
-                });
-            }
-        });
-    </script>
-</body>
-</html>
+
